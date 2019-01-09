@@ -3,8 +3,8 @@ This module demonstrates lets you practice INPUT from the CONSOLE.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
-         and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and Katana Colledge.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 def main():
@@ -31,10 +31,11 @@ def double_a_float():
          -6.28
     """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # DONE: 2. Implement and test this function.
     #   The testing code is already written for you (above).
     # -------------------------------------------------------------------------
-
+    x = float(input("Please enter a point number:"))
+    print(x*2)
 
 def print_an_integer_many_times():
     """
@@ -62,10 +63,12 @@ def print_an_integer_many_times():
          10
     """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #   The testing code is already written for you (above).
     # -------------------------------------------------------------------------
-
+    x = int(input("Please enter a positive integer:"))
+    for _ in range(x):
+        print(x*2)
 
 def print_an_integer_many_times_on_one_row():
     """
@@ -81,14 +84,17 @@ def print_an_integer_many_times_on_one_row():
          1010101010
     """
     # -------------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     #   The testing code is already written for you (above).
     #
     # HINT: One way to print on a SINGLE line is to build up a string
     #       and then print that (single) string.
     # -------------------------------------------------------------------------
-
-
+    x = int(input("Please enter a positive integer:"))
+    string = ''
+    for _ in range(x):
+        string = string + str(x*2)
+    print(string)
 def input_it_all():
     """
     What comes in: Nothing.
@@ -121,9 +127,17 @@ def input_it_all():
          Peace & Love.
     """
     # -------------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # DONE: 5. Implement and test this function.
     #   The testing code is already written for you (above).
     # -------------------------------------------------------------------------
+    point_num = float(input("Please input a point number:"))
+    integer = int(input("Please input a positive integer:"))
+    string = input("Please input a string:")
+
+    for _ in range (integer):
+        print(point_num**0.5)
+    for _ in range (integer):
+        print(string)
 
 
 # -----------------------------------------------------------------------------
